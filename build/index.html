@@ -1,0 +1,54 @@
+Html Webpack Plugin:
+<pre>
+  Error: html-webpack-plugin could not minify the generated   output.
+  In production mode the html minifcation is enabled by def  ault.
+  If you are not generating a valid html output please disa  ble it manually.
+  You can do so by adding the following setting to your Htm  lWebpackPlugin config:
+  |
+  |    minify: false
+  |
+  See https://github.com/jantimon/html-webpack-plugin#optio  ns for details.
+  For parser dedicated bugs please create an issue here:
+  https://danielruf.github.io/html-minifier-terser/
+  Parse Error: <html lang="es>
+      <meta charset="utf-8" />
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, in  itial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta
+        name="description"
+        content="Web site created using create-react-app"
+      />
+      <link rel="apple-touch-icon" href="/logo192.png" />
+      <link rel="manifest" href="/manifest.json" />
+      <title>Paint App</title>
+    <link href="/static/css/main.21cc08c7.chunk.css" rel="s  tylesheet"></head>
+    <body>
+      <noscript>You need to enable JavaScript to run this a  pp.</noscript>
+      <div id="root"></div>
+    <script>!function(e){function r(r){for(var n,p,l=r[0],a  =r[1],f=r[2],c=0,s=[];c<l.length;c++)p=l[c],Object.protot  ype.hasOwnProperty.call(o,p)&&o[p]&&s.push(o[p][0]),o[p]=  0;for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(  e[n]=a[n]);for(i&&i(r);s.length;)s.shift()();return u.pus  h.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.lengt  h;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var a=t[l]  ;0!==o[a]&&(n=!1)}n&&(u.splice(r--,1),e=p(p.s=t[0]))}retu  rn e}var n={},o={1:0},u=[];function p(r){if(n[r])return n  [r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].  call(t.exports,t,t.exports,p),t.l=!0,t.exports}p.m=e,p.c=  n,p.d=function(e,r,t){p.o(e,r)||Object.defineProperty(e,r  ,{enumerable:!0,get:t})},p.r=function(e){"undefined"!==ty  peof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,  Symbol.toStringTag,{value:"Module"}),Object.definePropert  y(e,"__esModule",{value:!0})},p.t=function(e,r){if(1&r&&(  e=p(e)),8&r)return e;if(4&r&&"object"===typeof e&&e&&e.__  esModule)return e;var t=Object.create(null);if(p.r(t),Obj  ect.defineProperty(t,"default",{enumerable:!0,value:e}),2  &r&&"string"!=typeof e)for(var n in e)p.d(t,n,function(r)  {return e[r]}.bind(null,n));return t},p.n=function(e){var   r=e&&e.__esModule?function(){return e.default}:function(  ){return e};return p.d(r,"a",r),r},p.o=function(e,r){retu  rn Object.prototype.hasOwnProperty.call(e,r)},p.p="/";var   l=this.webpackJsonpapp=this.webpackJsonpapp||[],a=l.push  .bind(l);l.push=r,l=l.slice();for(var f=0;f<l.length;f++)  r(l[f]);var i=a;t()}([]);
+  //# sourceMappingURL=runtime-main.d733170b.js.map</script  ><script src="/static/js/2.918da128.chunk.js"></script><s  cript src="/static/js/main.46b35ee9.chunk.js"></script></  body>
+  </html>
+  
+  - htmlparser.js:244 new HTMLParser
+    [app]/[html-minifier-terser]/src/htmlparser.js:244:13
+  
+  - htmlminifier.js:993 minify
+    [app]/[html-minifier-terser]/src/htmlminifier.js:993:3
+  
+  - htmlminifier.js:1354 Object.exports.minify
+    [app]/[html-minifier-terser]/src/htmlminifier.js:1354:1    6
+  
+  - index.js:1013 HtmlWebpackPlugin.minifyHtml
+    [app]/[html-webpack-plugin]/index.js:1013:46
+  
+  - index.js:429 HtmlWebpackPlugin.postProcessHtml
+    [app]/[html-webpack-plugin]/index.js:429:40
+  
+  - index.js:254 
+    [app]/[html-webpack-plugin]/index.js:254:25
+  
+  - task_queues.js:95 processTicksAndRejections
+    internal/process/task_queues.js:95:5
+  
+</pre>
